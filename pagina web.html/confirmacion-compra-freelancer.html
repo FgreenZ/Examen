@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FREELANCER'S — Confirmar compra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="side">
+            <a class="brand" href="dashboard-freelancer.html">
+                <i>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round">
+                        <circle cx="8" cy="8" r="6"/>
+                        <path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/>
+                    </svg>
+                </i>
+                FREELANCER’S
+            </a>
+            <nav class="nav">
+                <a href="dashboard-freelancer.html">
+                    <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10H3z"/></svg>
+                    Inicio
+                </a>
+                <a href="explorador-ofertas.html">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg>
+                    Explorar ofertas
+                </a>
+                <a href="mis-proyectos.html">
+                    <svg viewBox="0 0 24 24"><path d="M3 7h6l2 2h10v10H3z"/></svg>
+                    Mis proyectos
+                </a>
+                <a href="ganancias-freelancer.html">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 9v6"/></svg>
+                    Ganancias
+                </a>
+                <a class="on" href="comprar-freelancoins.html">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 10v4"/></svg>
+                    FreelanCoins
+                </a>
+            </nav>
+            <div class="ws">
+                <div class="u">
+                    <span class="av" style="width:32px;height:32px;background:linear-gradient(135deg,#65a30d,#a16207)"></span>
+                    <div>
+                        <b>Fabian Green</b>
+                        <small>UI/UX &amp; Shopify Dev</small>
+                    </div>
+                </div>
+                <div class="coins"><s></s>240 FreelanCoins</div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="top">
+                <div class="lft">
+                    <a class="back" href="comprar-freelancoins.html">
+                        <svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                    </a>
+                    <h1>Confirmar Compra</h1>
+                </div>
+                <div class="acts">
+                    <div class="search">
+                        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+                        Buscar ofertas o tareas...
+                    </div>
+                    <div class="bell">
+                        <svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0112 0c0 7 3 9 3 9H3s3-2 3-9M10 21h4"/></svg>
+                    </div>
+                    <span class="av" style="width:32px;height:32px;background:linear-gradient(135deg,#65a30d,#a16207)"></span>
+                </div>
+            </header>
+
+            <div class="content">
+                <div style="display:flex;flex-direction:column;gap:24px">
+                    <a class="backl" href="comprar-freelancoins.html">← Volver a paquetes de recarga</a>
+
+                    <div class="pay">
+                        <div class="l">
+                            <section class="pcard">
+                                <div>
+                                    <h3>Detalles de Pago</h3>
+                                    <p class="lead">Introduce los datos de tu tarjeta de crédito o débito para procesar el pago al instante de manera segura.</p>
+                                </div>
+                                <div class="cards-acc">
+                                    Tarjetas aceptadas:
+                                    <span class="c">Visa</span>
+                                    <span class="c">Mastercard</span>
+                                    <span class="c">American Express</span>
+                                </div>
+                                <div class="pf">
+                                    <div class="fld">
+                                        <label>Nombre en la tarjeta</label>
+                                        <div class="inp">
+                                            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                                            Fernanda Jácome
+                                        </div>
+                                    </div>
+                                    <div class="fld">
+                                        <label>Número de tarjeta</label>
+                                        <div class="inp g">
+                                            <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                                            4000 1234 5678 9010
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="fld">
+                                            <label>Fecha de vencimiento</label>
+                                            <div class="inp g">MM/AA</div>
+                                        </div>
+                                        <div class="fld">
+                                            <label>Código de seguridad (CVV)</label>
+                                            <div class="inp g">123</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chk">
+                                    <i><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-6"/></svg></i>
+                                    Guardar tarjeta para futuras compras de FreelanCoins.
+                                </div>
+                            </section>
+                            <div class="secure">
+                                <svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+                                Pago seguro encriptado con tecnología SSL de 256 bits. Tus datos financieros están completamente protegidos.
+                            </div>
+                        </div>
+
+                        <div class="r">
+                            <section class="sum">
+                                <div class="hd">
+                                    <b class="t">PAQUETE SELECCIONADO</b>
+                                    <span class="chip">Más Popular</span>
+                                </div>
+                                <div class="sel">
+                                    <span class="pico"><i></i></span>
+                                    <div>
+                                        <h4>120 Coins</h4>
+                                        <p>+20 Coins de bonificación de regalo</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div style="display:flex;flex-direction:column;gap:12px">
+                                    <div class="ln">Subtotal<b>$20.00 USD</b></div>
+                                    <div class="ln">IVA (16%)<b>$3.20 USD</b></div>
+                                    <hr>
+                                    <div class="tot">Total a pagar<span>$23.20 USD</span></div>
+                                </div>
+                                <a class="pay-btn" href="#">Confirmar y Pagar $23.20 USD</a>
+                            </section>
+                            <p class="fine">Al confirmar la compra, aceptas los Términos de Servicio y Políticas de Reembolso de Freelancer's. La recarga de coins es inmediata.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

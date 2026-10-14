@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>FREELANCER'S — Dashboard cliente</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <a class="brand" href="dashboard-cliente.html"><i><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg></i>FREELANCER’S</a>
+    <nav class="nav">
+      <a class="on" href="dashboard-cliente.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10H3z"/></svg>Inicio</a>
+      <a href="publicar-oferta.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>Crear Oferta</a>
+      <a href="detalle-oferta.html"><svg viewBox="0 0 24 24"><path d="M3 7h6l2 2h10v10H3z"/></svg>Ofertas</a>
+      <a href="comprar-freelancoins-cliente.html"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg>Finanzas</a>
+      <a href="propuestas-recibidas.html"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H8l-4 4z"/></svg>Propuestas</a>
+      <a href="proyectos-activos-detalle.html"><svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><circle cx="12" cy="12" r="10"/></svg>Proyectos Activos</a>
+    </nav>
+    <div class="ws">
+      <div class="u"><span class="av" style="width:32px;height:32px"></span><div><b>Fernanda Jácome</b><small>Cliente (Acme S.A.)</small></div></div>
+      <div class="coins"><s></s>240 FreelanCoins</div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="top">
+      <h1>Dashboard</h1>
+      <div class="acts">
+        <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>Buscar profesionales...</div>
+        <div class="bell"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0112 0c0 7 3 9 3 9H3s3-2 3-9M10 21h4"/></svg></div>
+        <span class="av" style="width:36px;height:36px"></span>
+      </div>
+    </header>
+    <div class="content">
+      <section class="banner">
+        <div><h2>¡Hola de nuevo, Fernanda Jácome!</h2><p>Tienes propuestas frescas listas para revisión en tu proyecto principal.</p></div>
+        <a class="btn" href="publicar-oferta.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>Crear Oferta</a>
+      </section>
+      <section class="stats">
+        <div class="card stat"><p>Proyectos Publicados</p><div><strong>4</strong><span style="color:#f59e0b">+1 este mes</span></div></div>
+        <div class="card stat"><p>Proyectos Activos</p><div><strong>2</strong><span style="color:var(--teal)">En desarrollo</span></div></div>
+        <div class="card stat"><p>Proyectos Finalizados</p><div><strong>8</strong><span style="color:#10b981">Exitosos</span></div></div>
+      </section>
+      <section class="cols">
+        <div class="card">
+          <div class="hd"><h3>Tu Oferta Destacada</h3><span class="chip">Publicado</span></div>
+          <div><h4>Rediseño de Ecommerce Shopify</h4><p class="d">Buscamos experto en Shopify y Figma para rediseñar completamente nuestro ecommerce de indumentaria contemporánea.</p></div>
+          <div class="meta"><div><small>PRESUPUESTO</small><b>$2,500 - $3,500 USD</b></div><div><small>PROPUESTAS</small><b style="color:var(--teal)">12 recibidas</b></div></div>
+        </div>
+        <div class="card">
+          <h3>Actividad Reciente</h3>
+          <div class="act">
+            <div><i class="n"></i><span><p class="t">Recibiste 5 propuestas para 'Rediseño de Ecommerce'</p><small>Hace 10 min</small></span></div>
+            <div><i></i><span><p>El proyecto 'App de Entregas' se marcó como finalizado</p><small>Hace 2 horas</small></span></div>
+            <div><i></i><span><p>Aprobaste el primer hito de 'Landing Page'</p><small>Hace 1 día</small></span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>

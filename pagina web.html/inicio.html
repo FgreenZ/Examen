@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <title>FREELANCER'S — Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;800&family=Geist:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --indigo: #4f46e5;
+            --blue: #2563eb;
+            --bg: #f2f8ff;
+            --white: #fff;
+            --ink: #111827;
+            --ink-2: #374151;
+            --ink-3: #4b5563;
+            --line: #e5e7eb;
+            --tint: #eff6ff;
+            --head: 'Roboto', 'Inter', system-ui, sans-serif;
+            --body: 'Geist', 'Inter', system-ui, sans-serif;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        html, body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--body);
+        }
+
+        .page {
+            position: relative;
+            width: 1440px;
+            height: 1024px;
+            margin: 0 auto;
+            background: var(--bg);
+            overflow: hidden;
+        }
+
+        @media (max-width: 1440px) {
+            .page {
+                margin: 0;
+            }
+        }
+
+        /* Header */
+        .header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 97px;
+            background: var(--white);
+            border-bottom: 5px solid var(--indigo);
+        }
+
+        .tri {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 58px;
+            height: 92px;
+            background: var(--indigo);
+            clip-path: polygon(0 0, 0 100%, 100% 74%);
+        }
+
+        .tri-cover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 58px;
+            height: 92px;
+            background: var(--bg);
+            clip-path: polygon(0 100%, 100% 74%, 100% 100%);
+        }
+
+        .logo-ico {
+            position: absolute;
+            left: 68px;
+            top: 22px;
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            background: var(--indigo);
+            display: grid;
+            place-items: center;
+        }
+
+        .logo-ico svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .logo {
+            position: absolute;
+            left: 96px;
+            top: 14px;
+            font: 700 36px/1.2 var(--head);
+            color: var(--indigo);
+            margin: 0;
+            letter-spacing: .2px;
+        }
+
+        .nav a {
+            position: absolute;
+            top: 26px;
+            font: 700 27px/1.2 var(--body);
+            color: #000;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .nav .login {
+            left: 1023px;
+            width: 183px;
+            text-align: center;
+        }
+
+        .nav .signup {
+            left: 1263px;
+            width: 207px;
+            text-align: center;
+        }
+
+        /* Hero */
+        h1 {
+            position: absolute;
+            left: 343px;
+            top: 184px;
+            width: 834px;
+            margin: 0;
+            text-align: center;
+            font: 800 80px/1.1 var(--head);
+            color: var(--ink);
+        }
+
+        .sub {
+            position: absolute;
+            left: 322px;
+            top: 478px;
+            width: 797px;
+            margin: 0;
+            text-align: center;
+            font: 400 22px/1.5 var(--body);
+            color: var(--ink-3);
+        }
+
+        h2 {
+            position: absolute;
+            left: 120px;
+            top: 586px;
+            margin: 0;
+            font: 800 40px/1.2 var(--head);
+            color: var(--ink);
+            white-space: nowrap;
+        }
+
+        /* Cards */
+        .cards {
+            position: absolute;
+            left: 65px;
+            top: 667px;
+            width: 1340px;
+            display: flex;
+            gap: 24px;
+        }
+
+        .card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, .04);
+        }
+
+        .card-head {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .ico {
+            flex: none;
+            width: 56px;
+            height: 56px;
+            border-radius: 18px;
+            background: var(--tint);
+            display: grid;
+            place-items: center;
+        }
+
+        .ico svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .card h3 {
+            margin: 0 0 6px;
+            font: 700 30px/1.2 var(--head);
+            color: var(--ink);
+        }
+
+        .card-head p {
+            margin: 0;
+            font: 400 15px/1.5 var(--body);
+            color: var(--ink-3);
+        }
+
+        .bullets {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .bullets li {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font: 400 16px/1.5 var(--body);
+            color: var(--ink-2);
+        }
+
+        .bullets li::before {
+            content: "";
+            flex: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--blue);
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            height: 56px;
+            align-items: center;
+            justify-content: center;
+            background: var(--blue);
+            color: #fff;
+            border-radius: 18px;
+            font: 700 16px/1 var(--body);
+            text-decoration: none;
+        }
+
+        .cta svg {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="tri"></div>
+            <div class="logo-ico">
+                <svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round">
+                    <circle cx="8" cy="8" r="6"/>
+                    <path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/>
+                </svg>
+            </div>
+            <p class="logo">FREELANCER’S</p>
+            <nav class="nav">
+                <a class="login" href="#">Iniciar sesion</a>
+                <a class="signup" href="#">Registrarse</a>
+            </nav>
+        </header>
+
+        <h1>La plataforma #1 para contratistas y Freelancers</h1>
+        <p class="sub">El punto de encuentro confiable donde los mejores proyectos se hacen realidad con talento verificado y pagos seguros.</p>
+
+        <h2>Dos caminos para crecer</h2>
+
+        <section class="cards">
+            <article class="card">
+                <div class="card-head">
+                    <div class="ico">
+                        <svg viewBox="0 0 24 24" fill="#2563eb">
+                            <path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Para empresas y contratistas</h3>
+                        <p>Encuentra talento de alta calidad y gestiona tu proyecto con total claridad.</p>
+                    </div>
+                </div>
+                <ul class="bullets">
+                    <li>Conecta con freelancers cualificados en segundos</li>
+                    <li>Solo paga a los freelancers cuando estés satisfecho con su trabajo</li>
+                </ul>
+                <a class="cta" href="#">
+                    Contratar un cliente
+                    <svg viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9h12M10 4l5 5-5 5"/>
+                    </svg>
+                </a>
+            </article>
+
+            <article class="card">
+                <div class="card-head">
+                    <div class="ico">
+                        <svg viewBox="0 0 24 24" fill="#2563eb">
+                            <path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Para freelancers</h3>
+                        <p>Ofrece tus servicios, recibe oportunidades y construye una carrera estable.</p>
+                    </div>
+                </div>
+                <ul class="bullets">
+                    <li>Publica un trabajo y recibe ofertas de inmediato</li>
+                    <li>Establece relaciones con profesionales altamente valorados</li>
+                </ul>
+                <a class="cta" href="#">
+                    Ganar dinero como freelancer
+                    <svg viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9h12M10 4l5 5-5 5"/>
+                    </svg>
+                </a>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
