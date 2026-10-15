@@ -77,9 +77,10 @@ a.brand {
     place-items: center;
 }
 
-.brand svg {
+.brand i img {
     width: 20px;
     height: 20px;
+    object-fit: contain;
 }
 
 .nav {
@@ -105,15 +106,11 @@ a.brand {
     font-weight: 600;
 }
 
-.nav svg {
-    width: 18px;
-    height: 18px;
-    flex: none;
-    stroke: currentColor;
-    fill: none;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+.nav a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 /* --- Widget de usuario (sidebar) --- */
@@ -135,8 +132,8 @@ a.brand {
 
 .av {
     border-radius: 50%;
-    background: linear-gradient(135deg, #f59e0b, #be185d);
-    flex: none;
+    object-fit: cover; 
+    display: block;
 }
 
 .ws b {
@@ -156,12 +153,11 @@ a.brand {
     align-items: center;
 }
 
-.coins s {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: #f59e0b;
-    display: inline-block;
+.coins img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 /* ============================================================
@@ -205,15 +201,11 @@ a.brand {
     align-items: center;
 }
 
-.search svg,
-.bell svg {
+.search img {
     width: 16px;
     height: 16px;
-    stroke: var(--ink-2);
-    fill: none;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .bell {
@@ -223,7 +215,7 @@ a.brand {
     display: flex;
 }
 
-.bell svg {
+.bell img {
     width: 18px;
     height: 18px;
 }
@@ -633,16 +625,13 @@ a.brand {
     color: var(--ink-3);
 }
 
-.inp svg {
+.inp img {
     width: 16px;
     height: 16px;
-    stroke: var(--ink);
-    fill: none;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-left: auto; 
 }
-
 .tags {
     display: flex;
     flex-wrap: wrap;
